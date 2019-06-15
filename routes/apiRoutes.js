@@ -21,6 +21,7 @@ module.exports = function (app) {
                 title: title,
                 summary: summary
                 });
+                console.log(results)
             });
 
             db.Article.create(results)
