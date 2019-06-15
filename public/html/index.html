@@ -1,12 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>News Scraper</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>	
+	<link type="text/css" href="../css/style.css" rel="stylesheet" media="screen"> 
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
 </head>
 <body>
-    
+    <div id="primary">
+        <p>LandScraper News-- the latest headlines in horticulture</p>
+        <div>
+            <a id="viewSavedButton" href="../html/saved.html" role="button" class="btn btn-primary btn-lg">View Saved Articles</a>
+        </div>
+    </div>
+
+    <div style="display: block">
+        <button id="scrapeButton" type="button" class="btn btn-primary btn-lg btn-block">Retrieve articles</button>
+    </div>
+
+    <div style="display: none">
+        <button id="goToSavedButton" type="button" class="btn btn-primary btn-lg btn-block">View Saved Articles</button>
+    </div>
 </body>
 </html>
