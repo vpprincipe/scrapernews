@@ -6,7 +6,7 @@ const cheerio = require("cheerio");
 const bodyParser = require('body-parser');
 
 
-var PORT = process.env.PORT || 3030;
+const PORT = process.env.PORT || 3030;
 
 const app = express();
 
@@ -22,7 +22,7 @@ require("./routes/apiRoutes")(app);
 require("./routes/htmlRoutes")(app);
 
 
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/LandScraper";
+const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/LandScraper";
 
 // mongoose.connect(MONGODB_URI);
 
